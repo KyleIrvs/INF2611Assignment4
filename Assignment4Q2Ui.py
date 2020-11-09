@@ -89,7 +89,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.lblName.setText(_translate("MainWindow", "Name: Kyle Irvine"))
-        self.LblStudentNumber.setText(_translate("MainWindow", "Student Number: 62049232"))
+        self.LblStudentNumber.setText(_translate("MainWindow", "StudentNumebr"))
         self.lblURL.setText(_translate("MainWindow", "URL : https://www.olympic.org/tokyo-2020"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.menuData_Maintenance.setTitle(_translate("MainWindow", "Data Maintenance"))
