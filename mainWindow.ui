@@ -44,7 +44,7 @@
      <item>
       <widget class="QLabel" name="LblStudentNumber">
        <property name="text">
-        <string>Student Number: 62049232</string>
+        <string>StudentNumber</string>
        </property>
       </widget>
      </item>
