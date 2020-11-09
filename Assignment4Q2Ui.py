@@ -1,0 +1,117 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'mainWindow.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.2
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(367, 293)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.mdi = QtWidgets.QMdiArea(self.centralwidget)
+        self.mdi.setGeometry(QtCore.QRect(5, 5, 356, 206))
+        self.mdi.setObjectName("mdi")
+        self.verticalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(150, 220, 210, 46))
+        self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
+        self.lytInfo = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
+        self.lytInfo.setContentsMargins(0, 0, 0, 0)
+        self.lytInfo.setObjectName("lytInfo")
+        self.lblName = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.lblName.setObjectName("lblName")
+        self.lytInfo.addWidget(self.lblName)
+        self.LblStudentNumber = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.LblStudentNumber.setObjectName("LblStudentNumber")
+        self.lytInfo.addWidget(self.LblStudentNumber)
+        self.lblURL = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.lblURL.setObjectName("lblURL")
+        self.lytInfo.addWidget(self.lblURL)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 367, 21))
+        self.menubar.setObjectName("menubar")
+        self.menuFile = QtWidgets.QMenu(self.menubar)
+        self.menuFile.setObjectName("menuFile")
+        self.menuData_Maintenance = QtWidgets.QMenu(self.menubar)
+        self.menuData_Maintenance.setObjectName("menuData_Maintenance")
+        self.menuOlympic_Events = QtWidgets.QMenu(self.menuData_Maintenance)
+        self.menuOlympic_Events.setObjectName("menuOlympic_Events")
+        self.menuOlympic_Venues = QtWidgets.QMenu(self.menuData_Maintenance)
+        self.menuOlympic_Venues.setObjectName("menuOlympic_Venues")
+        self.menuReporting = QtWidgets.QMenu(self.menubar)
+        self.menuReporting.setObjectName("menuReporting")
+        self.menuAbout = QtWidgets.QMenu(self.menubar)
+        self.menuAbout.setObjectName("menuAbout")
+        MainWindow.setMenuBar(self.menubar)
+        self.actionAdd_New_Event_Record = QtWidgets.QAction(MainWindow)
+        self.actionAdd_New_Event_Record.setObjectName("actionAdd_New_Event_Record")
+        self.actionEdit_Existing_Event_Record = QtWidgets.QAction(MainWindow)
+        self.actionEdit_Existing_Event_Record.setObjectName("actionEdit_Existing_Event_Record")
+        self.actionDelete_Existing_Event_Record = QtWidgets.QAction(MainWindow)
+        self.actionDelete_Existing_Event_Record.setObjectName("actionDelete_Existing_Event_Record")
+        self.actionShow_File_Content = QtWidgets.QAction(MainWindow)
+        self.actionShow_File_Content.setObjectName("actionShow_File_Content")
+        self.actionAdd_New_Venue_Record = QtWidgets.QAction(MainWindow)
+        self.actionAdd_New_Venue_Record.setObjectName("actionAdd_New_Venue_Record")
+        self.actionEdit_Existing_Venue_Record = QtWidgets.QAction(MainWindow)
+        self.actionEdit_Existing_Venue_Record.setObjectName("actionEdit_Existing_Venue_Record")
+        self.actionDelete_Existing_Venue_Record = QtWidgets.QAction(MainWindow)
+        self.actionDelete_Existing_Venue_Record.setObjectName("actionDelete_Existing_Venue_Record")
+        self.actionShow_vFile_content = QtWidgets.QAction(MainWindow)
+        self.actionShow_vFile_content.setObjectName("actionShow_vFile_content")
+        self.menuOlympic_Events.addAction(self.actionAdd_New_Event_Record)
+        self.menuOlympic_Events.addAction(self.actionEdit_Existing_Event_Record)
+        self.menuOlympic_Events.addAction(self.actionDelete_Existing_Event_Record)
+        self.menuOlympic_Events.addAction(self.actionShow_File_Content)
+        self.menuOlympic_Venues.addAction(self.actionAdd_New_Venue_Record)
+        self.menuOlympic_Venues.addAction(self.actionEdit_Existing_Venue_Record)
+        self.menuOlympic_Venues.addAction(self.actionDelete_Existing_Venue_Record)
+        self.menuOlympic_Venues.addAction(self.actionShow_vFile_content)
+        self.menuData_Maintenance.addAction(self.menuOlympic_Events.menuAction())
+        self.menuData_Maintenance.addAction(self.menuOlympic_Venues.menuAction())
+        self.menubar.addAction(self.menuFile.menuAction())
+        self.menubar.addAction(self.menuData_Maintenance.menuAction())
+        self.menubar.addAction(self.menuReporting.menuAction())
+        self.menubar.addAction(self.menuAbout.menuAction())
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.lblName.setText(_translate("MainWindow", "Name: Kyle Irvine"))
+        self.LblStudentNumber.setText(_translate("MainWindow", "Student Number: 62049232"))
+        self.lblURL.setText(_translate("MainWindow", "URL : https://www.olympic.org/tokyo-2020"))
+        self.menuFile.setTitle(_translate("MainWindow", "File"))
+        self.menuData_Maintenance.setTitle(_translate("MainWindow", "Data Maintenance"))
+        self.menuOlympic_Events.setTitle(_translate("MainWindow", "Olympic Events"))
+        self.menuOlympic_Venues.setTitle(_translate("MainWindow", "Olympic Venues"))
+        self.menuReporting.setTitle(_translate("MainWindow", "Reporting"))
+        self.menuAbout.setTitle(_translate("MainWindow", "About"))
+        self.actionAdd_New_Event_Record.setText(_translate("MainWindow", "Add New Event Record"))
+        self.actionEdit_Existing_Event_Record.setText(_translate("MainWindow", "Edit Existing Event Record"))
+        self.actionDelete_Existing_Event_Record.setText(_translate("MainWindow", "Delete Existing Event Record"))
+        self.actionShow_File_Content.setText(_translate("MainWindow", "Show File Content"))
+        self.actionAdd_New_Venue_Record.setText(_translate("MainWindow", "Add New Venue Record"))
+        self.actionEdit_Existing_Venue_Record.setText(_translate("MainWindow", "Edit Existing Venue Record"))
+        self.actionDelete_Existing_Venue_Record.setText(_translate("MainWindow", "Delete Existing Venue Record"))
+        self.actionShow_vFile_content.setText(_translate("MainWindow", "Show File content"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())

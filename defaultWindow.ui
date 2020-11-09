@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DefaultWindow</class>
+ <widget class="QDialog" name="DefaultWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>368</width>
+    <height>144</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="lblMainInfo">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>40</y>
+     <width>311</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Welcome to my Assignment 4 for INF2611 in semester 1 of 2020</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblMenuUse">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>60</y>
+     <width>276</width>
+     <height>66</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Please use the menu above to navigate through the application. Please login to continue and view all table data</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

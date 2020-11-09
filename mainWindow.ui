@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>367</width>
+    <height>303</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QMdiArea" name="mdi">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>356</width>
+      <height>206</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>220</y>
+      <width>210</width>
+      <height>53</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="lytInfo">
+     <item>
+      <widget class="QLabel" name="lblName">
+       <property name="text">
+        <string>Name: Kyle Irvine</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="LblStudentNumber">
+       <property name="text">
+        <string>Student Number: 62049232</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lblURL">
+       <property name="text">
+        <string>URL : https://www.olympic.org/tokyo-2020</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>367</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuData_Maintenance">
+    <property name="title">
+     <string>Data Maintenance</string>
+    </property>
+    <widget class="QMenu" name="menuOlympic_Events">
+     <property name="title">
+      <string>Olympic Events</string>
+     </property>
+     <addaction name="actionAdd_New_Event_Record"/>
+     <addaction name="actionEdit_Existing_Event_Record"/>
+     <addaction name="actionDelete_Existing_Event_Record"/>
+     <addaction name="actionShow_File_Content"/>
+    </widget>
+    <widget class="QMenu" name="menuOlympic_Venues">
+     <property name="title">
+      <string>Olympic Venues</string>
+     </property>
+     <addaction name="actionAdd_New_Venue_Record"/>
+     <addaction name="actionEdit_Existing_Venue_Record"/>
+     <addaction name="actionDelete_Existing_Venue_Record"/>
+     <addaction name="actionShow_File_content"/>
+    </widget>
+    <addaction name="menuOlympic_Events"/>
+    <addaction name="menuOlympic_Venues"/>
+   </widget>
+   <widget class="QMenu" name="menuReporting">
+    <property name="title">
+     <string>Reporting</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuData_Maintenance"/>
+   <addaction name="menuReporting"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <action name="actionAdd_New_Event_Record">
+   <property name="text">
+    <string>Add New Event Record</string>
+   </property>
+  </action>
+  <action name="actionEdit_Existing_Event_Record">
+   <property name="text">
+    <string>Edit Existing Event Record</string>
+   </property>
+  </action>
+  <action name="actionDelete_Existing_Event_Record">
+   <property name="text">
+    <string>Delete Existing Event Record</string>
+   </property>
+  </action>
+  <action name="actionShow_File_Content">
+   <property name="text">
+    <string>Show File Content</string>
+   </property>
+  </action>
+  <action name="actionAdd_New_Venue_Record">
+   <property name="text">
+    <string>Add New Venue Record</string>
+   </property>
+  </action>
+  <action name="actionEdit_Existing_Venue_Record">
+   <property name="text">
+    <string>Edit Existing Venue Record</string>
+   </property>
+  </action>
+  <action name="actionDelete_Existing_Venue_Record">
+   <property name="text">
+    <string>Delete Existing Venue Record</string>
+   </property>
+  </action>
+  <action name="actionShow_File_content">
+   <property name="text">
+    <string>Show File content</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
